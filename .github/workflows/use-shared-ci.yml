@@ -1,0 +1,10 @@
+name: use-shared-ci
+
+on:
+  push:                    
+  pull_request:            
+  workflow_dispatch: 
+
+jobs:
+  run-shared-ci:
+    uses: nihar-landge/shared-workflows/.github/workflows/shared-ci.yml@master
